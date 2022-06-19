@@ -1,0 +1,70 @@
+﻿@model VehicleInfo
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-3 my-3 border">
+    <h1>Vehicle Details</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.ChassisNo)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ChassisNo)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Make)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Make)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.VehicleDetailInfo.FirstOrDefault().Grade)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.VehicleDetailInfo.FirstOrDefault().Grade)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.VehicleDetailInfo.FirstOrDefault().Transmission)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.VehicleDetailInfo.FirstOrDefault().Transmission)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.VehicleDetailInfo.FirstOrDefault().Colour)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.VehicleDetailInfo.FirstOrDefault().Colour)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.VehicleDetailInfo.FirstOrDefault().Engine)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.VehicleDetailInfo.FirstOrDefault().Engine)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.VehicleDetailInfo.FirstOrDefault().Fuel)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.VehicleDetailInfo.FirstOrDefault().Fuel)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.VehicleDetailInfo.FirstOrDefault().ExtrasInfo)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.VehicleDetailInfo.FirstOrDefault().ExtrasInfo)
+        </dd>
+    </dl>
+    <div>
+        <a class="btn btn-primary" asp-action="AddOrEdit" asp-route-VehicleId="@Model.VehicleId">Edit</a>
+        <a class="btn btn-danger" asp-action="Index">Back</a>
+    </div>
+</div>
