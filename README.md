@@ -12,6 +12,6 @@ To access website you can go on the link below
 
 http://tahavehicle-001-site1.ftempurl.com/Vehicle
 
-User can also change password and email after clicking on "hello user_name" on top right corner.
+User can also change password after clicking on "hello user_name" on top right corner.
 
 
